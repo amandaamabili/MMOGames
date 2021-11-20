@@ -18,6 +18,7 @@ const NavBar = styled(AppBar)({
   height: '70px',
   width: '100%',
   padding: '0 30px',
+  fontFamily: 'Montserrat', 
  
 });
 

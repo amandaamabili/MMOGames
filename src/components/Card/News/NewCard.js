@@ -9,9 +9,10 @@ import Typography from '@mui/material/Typography';
 
 export function NewCard({ id, title, description, thumb, articleUrl }) {
  
-  const openNewWindows = (url) => {
-    window.open(url, '_blank')
+  const openNewWindows = () => {
+    window.open(articleUrl, '_blank')
   }
+
 
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -30,7 +31,7 @@ export function NewCard({ id, title, description, thumb, articleUrl }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onCick={() => openNewWindows(articleUrl)}>Site</Button>
+        <Button size="small" onClick={() => openNewWindows()}>Site</Button>
       </CardActions>
     </Card>
   );

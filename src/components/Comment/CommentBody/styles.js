@@ -10,6 +10,7 @@ width: 100%;
     background: var(--red);
     font-weight: 400;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 
     
 span{

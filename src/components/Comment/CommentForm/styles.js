@@ -16,6 +16,7 @@ h2{
     margin-top:1.5rem;
     font-weight: 600;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
     align-items: center;
     
 }
@@ -32,6 +33,7 @@ input{
 
     border: 1px solid #d7d7d7;
     background: RGBA(245, 136, 64, 0.1);
+    font-family: 'Montserrat', sans-serif;
 
     font-weight: 400;
     font-size: 1rem;
@@ -70,7 +72,7 @@ button[type="submit"]{
 
 export const Container = styled.div`
 
-background: blue;
+
 
 
 `

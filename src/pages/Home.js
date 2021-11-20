@@ -24,6 +24,7 @@ const MyButton = styled(Button)({
   height: 48,
   width: '20%',
   padding: '0 30px',
+  fontFamily: 'Montserrat',
  
 });
 
@@ -45,6 +46,7 @@ export const Home = () => {
         justifyContent: "center",
         textTransform: "uppercase",
         fontSize: "2rem",
+        fontFamily: 'Montserrat', 
       }}
 
     >
