@@ -1,4 +1,7 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
+import gamesService from '../services/gamesService'
+import newServices from "../services/newService"
+
 
 const gameContext = createContext();
 gameContext.displayName = "Game Context";
@@ -40,48 +43,38 @@ export const GameContex = ({ children }) => {
   const [state, setState] = useReducer(reducer, initial_state);
 
   useEffect(() => {
-    const config1 = {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
-        "x-rapidapi-key": "6d65fcfef4msh17a794d7b7e75c4p1c4ce5jsnee5a688878e9",
-      },
-    };
-    
-    const config2 = {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "mmo-games.p.rapidapi.com",
-        "x-rapidapi-key": "3926a12f36mshf1347247fc53709p17ade4jsnededb7793d67",
-      },
-    };
-    
 
-    fetch("https://free-to-play-games-database.p.rapidapi.com/api/games", config1)
-      .then((response) => response.json())
-      .then((games) => setState({ type: "SET_GAMES", content: games }))
+
+
+
+    gamesService.get("/games")
+      .then(response => {
+        setState({ type: "SET_GAMES", content: response.data })
+      })
       .catch(console.error);
 
-      fetch("https://mmo-games.p.rapidapi.com/latestnews", config2)
-      .then((response) => response.json())
-      .then((games) => setState({ type: "SET_NEWS", content: games }))
+
+    newServices.get("/latestnews")
+      .then(response => {
+        setState({ type: "SET_NEWS", content: response.data })
+      })
       .catch(console.error);
+
+
 
   }, []);
 
   const fetchGameDetails = (id) => {
     if (!id) return;
 
-    const config = {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
-        "x-rapidapi-key": "6d65fcfef4msh17a794d7b7e75c4p1c4ce5jsnee5a688878e9",
-      },
-    };
-    fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`, config)
-      .then((response) => response.json())
-      .then((game) => setState({ type: "SET_GAME", content: game }));
+   
+
+
+      gamesService.get(`/game?id=${id}`)
+      .then(response => {
+        setState({ type: "SET_GAME", content: response.data })
+      })
+      .catch(console.error);
   };
 
   const clearGame = () => {

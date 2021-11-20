@@ -6,9 +6,8 @@ import { DefaultPage } from "../templates/DefaultPage";
 import { ScreenShoot } from "../components/Screenshoot";
 import { CommentList } from "../components/Comment/CommentList";
 import { styled } from '@mui/styles';
-
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const MyButton = styled(Button)({
   background: 'linear-gradient(45deg, #B85252 30%, #F58840 90%)',
@@ -20,6 +19,22 @@ const MyButton = styled(Button)({
   width: '20%',
   padding: '0 30px',
  
+
+  width: '20%',
+  marginBottom: '1rem',
+  height: '2.5rem',
+  background: 'linear-gradient(45deg, #B85252 30%, #F58840 90%)',
+  color: '#EADEDE',
+  borderRadius: '0.25rem',
+  border:' 0',
+  fontSize: '1rem',
+  marginTop:'1.5rem',
+  fontWeight: '600',
+
+  transition: 'filter 0.2s',
+
+
+
 });
 
 const GameDetails = () => {
