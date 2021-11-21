@@ -74,13 +74,10 @@
 
 ### Instalação
 
-1. Obtenha uma chave de API gratuita em : 
-<ul>
-<li>[MMO Games](https://rapidapi.com/digiwalls/api/mmo-games/)</li>
-  <li>[MMO Game](https://mmo-games.p.rapidapi.com/game)</li>
-  <li>[Last News](https://mmo-games.p.rapidapi.com/latestnews)</li>
-
-</ul>
+1. Inicialmente, realize o cadastro na plataforma [RapidApi](https://rapidapi.com/digiwalls/api/mmo-games/). Em seguida, obtenha na plataforma o seu token pessoal da API que será utilizado na sua máquina.
+É  necessário o token para as duas url's abaixo:
+* [MMO Game](https://mmo-games.p.rapidapi.com/game)
+* [Last News](https://mmo-games.p.rapidapi.com/latestnews)
 
 
 
