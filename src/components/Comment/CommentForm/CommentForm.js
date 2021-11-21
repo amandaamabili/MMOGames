@@ -62,7 +62,7 @@ export const CommentForm = ({gameId, onSubmit}) => {
         onBlur={formik.handleBlur}
         value={formik.values.comment}
         style={{
-          color: "#EADEDE",
+          color: "black",
           alignItems: "center",
           height: "6rem",
         }}
