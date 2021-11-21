@@ -8,7 +8,6 @@ import GameDetails from "./pages/GameDetails";
 import {GameNews} from "./pages/GameNews";
 
 import { GameContex } from "./contexts/game-context";
-import { color } from "@mui/system";
 
  const theme = createTheme({
   palette: {
