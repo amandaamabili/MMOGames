@@ -1,70 +1,111 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+   
+  </ol>
+</details>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
+## Sobre o Projeto
 
-### `yarn build`
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ Esse projeto foi desenvolvido no curso do DevInHouse- Senai com a intenção de ser o projeto final de Front-end.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Construído com
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+* [React.js](https://reactjs.org/)
+* [Material Ui](https://mui.com/pt/)
+* [Styled Components](https://styled-components.com/)
+* [Formik](https://formik.org/)
+* [Yup](https://www.npmjs.com/package/yup)
+* [Axios](https://www.npmjs.com/package/axios)
+* [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- GETTING STARTED -->
+## Começando
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Pré-requisitos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  
+* Yarn
+  ```sh
+  npm install --global yarn
+  ```
+  <br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Instalação
 
-### Deployment
+1. Obtenha uma chave de API gratuita em : 
+<ul>
+<li>[MMO Games](https://rapidapi.com/digiwalls/api/mmo-games/)</li>
+  <li>[MMO Game](https://mmo-games.p.rapidapi.com/game)</li>
+  <li>[Last News](https://mmo-games.p.rapidapi.com/latestnews)</li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+</ul>
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+2. Clone o repositório
+   ```sh
+   git clone git@github.com:amandaamabili/MMOGames.git
+   ```
+3. Instale Pacotes Yarn
+   ```sh
+   yarn install
+   ```
+4. Entre com  seu token da  API em ".env"
+
+<ul>
+<li> 
+   REACT_APP_FREE2PLAY_API_TOKEN=" Entre com  seu token da Api aqui!"
+   </li>
+  <li> 
+  REACT_APP_MMO_API_TOKEN="Entre com  seu token da Api aqui!"
+   </li>
+  
+
+</ul>
+
+  
+
+
