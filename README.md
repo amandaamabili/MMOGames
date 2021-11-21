@@ -90,7 +90,7 @@
    ```
 3. Instale Pacotes Yarn
    ```sh
-   yarn install
+   yarn 
    ```
 4. Entre com  seu token da  API em ".env"
 
